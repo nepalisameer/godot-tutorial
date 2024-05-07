@@ -1,0 +1,1918 @@
+[gd_scene load_steps=12 format=3 uid="uid://cy8kdqvmpv26h"]
+
+[ext_resource type="Script" path="res://CameraController.cs" id="1_1bmyg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hfqdo"]
+albedo_color = Color(0.47451, 0.207843, 0.141176, 0.639216)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_iwilx"]
+material = SubResource("StandardMaterial3D_hfqdo")
+radius = 0.3
+height = 4.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fwk4i"]
+albedo_color = Color(0.150931, 0.396267, 0.192101, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_34dlj"]
+material = SubResource("StandardMaterial3D_fwk4i")
+radius = 1.0
+height = 2.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x0ra1"]
+size = Vector3(9.87488, 0.222168, 10.0758)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x8e88"]
+albedo_color = Color(0.347642, 0.287421, 1.44392e-07, 0.992157)
+normal_scale = -13.47
+refraction_scale = -0.1
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_03fky"]
+material = SubResource("StandardMaterial3D_x8e88")
+size = Vector2(10, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mbllq"]
+size = Vector3(1, 10.6752, 100.369)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fxs6l"]
+size = Vector3(0.1, 1, 10)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_x3yc4"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Trees" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 46.4002)
+
+[node name="Trees" type="Node3D" parent="Trees"]
+transform = Transform3D(0.821149, 0, 0.570714, 0, 1, 0, -0.570714, 0, 0.821149, 0, 0.35, -27.5667)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.487495, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.58095, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05528, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.01551, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3296, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55562, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.36845, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54277, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.63623, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.28215, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.76964, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.8631, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5522, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0397, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.1332, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.36494, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.87745, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="Trees/Trees"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.78399, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees/MeshInstance3D15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="Trees6" type="Node3D" parent="Trees"]
+transform = Transform3D(0.482091, 0, -0.876121, 0, 1, 0, 0.876121, 0, 0.482091, -27.3115, 0.35, -27.5667)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.487495, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.58095, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05528, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.01551, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3296, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55562, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.36845, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54277, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.63623, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.28215, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.76964, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.8631, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5522, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0397, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.1332, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.36494, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.87745, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="Trees/Trees6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.78399, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees6/MeshInstance3D15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="Trees7" type="Node3D" parent="Trees"]
+transform = Transform3D(-0.49473, 0, -0.869047, 0, 1, 0, 0.869047, 0, -0.49473, -21.7141, 0.35, -59.1803)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.487495, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.58095, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05528, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.01551, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3296, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55562, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.36845, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54277, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.63623, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.28215, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.76964, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.8631, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5522, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0397, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.1332, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.36494, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.87745, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="Trees/Trees7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.78399, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees7/MeshInstance3D15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="Trees8" type="Node3D" parent="Trees"]
+transform = Transform3D(-0.248081, 0, -0.968739, 0, 1, 0, 0.968739, 0, -0.248081, -21.7141, 0.35, -40.5647)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.487495, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.58095, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05528, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.01551, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3296, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55562, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.36845, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54277, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.63623, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.28215, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.76964, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.8631, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5522, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0397, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.1332, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.36494, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.87745, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="Trees/Trees8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.78399, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees8/MeshInstance3D15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="Trees9" type="Node3D" parent="Trees"]
+transform = Transform3D(-0.48952, 0, 0.871992, 0, 1, 0, -0.871992, 0, -0.48952, -7.25417, 0.35, -60.068)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.487495, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.58095, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05528, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.01551, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3296, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55562, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.36845, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54277, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.63623, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.28215, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.76964, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.8631, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5522, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0397, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.1332, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.36494, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.87745, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="Trees/Trees9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.78399, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees9/MeshInstance3D15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="Trees2" type="Node3D" parent="Trees"]
+transform = Transform3D(-0.824126, 0, -0.566406, 0, 1, 0, 0.566406, 0, -0.824126, 9.01439, 0, -40.6075)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.487495, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.58095, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05528, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.01551, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3296, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55562, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.36845, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54277, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.63623, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.28215, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.76964, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.8631, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5522, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0397, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.1332, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.36494, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.87745, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="Trees/Trees2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.78399, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees2/MeshInstance3D15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="Trees3" type="Node3D" parent="Trees"]
+transform = Transform3D(-0.999263, 0, 0.0383878, 0, 1, 0, -0.0383878, 0, -0.999263, 21.3151, 0, -37.1766)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.487495, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.58095, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05528, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.01551, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3296, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55562, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.36845, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54277, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.63623, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.28215, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.76964, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.8631, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5522, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0397, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.1332, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.36494, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.87745, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="Trees/Trees3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.78399, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees3/MeshInstance3D15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="Trees4" type="Node3D" parent="Trees"]
+transform = Transform3D(0.906308, 0, 0.422618, 0, 1, 0, -0.422618, 0, 0.906308, 13.9062, 0, -29.8597)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.487495, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.58095, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05528, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.01551, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3296, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55562, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.36845, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54277, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.63623, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.28215, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.76964, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.8631, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5522, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0397, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.1332, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.36494, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.87745, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="Trees/Trees4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.78399, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees4/MeshInstance3D15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="Trees5" type="Node3D" parent="Trees"]
+transform = Transform3D(0.906308, 0, 0.422618, 0, 1, 0, -0.422618, 0, 0.906308, -3.50297, 0, -12.1011)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.487495, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.58095, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.05528, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.01551, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 7.06016)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.26338, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3296, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D20" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55562, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D21" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.36845, 1.03493, 11.1875)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.54277, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.63623, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.28215, 1.03493, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.76964, 0.261865, 10.4297)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.8631, 0.277078, 8.87824)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5522, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.0397, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.1332, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.36494, 1.03493, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.87745, 0.261865, 8.97167)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="Trees/Trees5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.78399, 0.277078, 7.42017)
+mesh = SubResource("CapsuleMesh_iwilx")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Trees/Trees5/MeshInstance3D15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0287, 0)
+mesh = SubResource("SphereMesh_34dlj")
+
+[node name="Ground" type="StaticBody3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, -0.059835, 13.6785)
+collision_layer = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0636597, -0.107801, -0.00931549)
+shape = SubResource("BoxShape3D_x0ra1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+layers = 2
+mesh = SubResource("PlaneMesh_03fky")
+skeleton = NodePath("../..")
+
+[node name="CameraHolder" type="Node3D" parent="." node_paths=PackedStringArray("_camera")]
+script = ExtResource("1_1bmyg")
+_camera = NodePath("Camera3D")
+
+[node name="Camera3D" type="Camera3D" parent="CameraHolder"]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 45, 30)
+projection = 1
+fov = 25.3
+size = 50.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.492424, 0.870356, 0, -0.870356, -0.492424, 0, 46.315, 0)
+light_color = Color(1, 0.926794, 0.780887, 1)
+shadow_enabled = true
+
+[node name="Walls" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 46.4002)
+
+[node name="wallleft" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.5308, 5.04431, -33.0658)
+collision_layer = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/wallleft"]
+shape = SubResource("BoxShape3D_mbllq")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Walls/wallleft"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+mesh = SubResource("BoxMesh_fxs6l")
+skeleton = NodePath("../../../Ground/MeshInstance3D")
+
+[node name="wallright" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.3449, 5.04431, -32.7217)
+collision_layer = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/wallright"]
+shape = SubResource("BoxShape3D_mbllq")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Walls/wallright"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+mesh = SubResource("BoxMesh_fxs6l")
+skeleton = NodePath("../../../Ground/MeshInstance3D")
+
+[node name="walltop" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.493282, 5.04431, -82.9104)
+collision_layer = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/walltop"]
+shape = SubResource("BoxShape3D_mbllq")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Walls/walltop"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+mesh = SubResource("BoxMesh_fxs6l")
+skeleton = NodePath("../../../Ground/MeshInstance3D")
+
+[node name="wallbottom" type="StaticBody3D" parent="Walls"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.652006, 5.04431, 17.3889)
+collision_layer = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/wallbottom"]
+shape = SubResource("BoxShape3D_mbllq")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Walls/wallbottom"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+mesh = SubResource("BoxMesh_fxs6l")
+skeleton = NodePath("../../../Ground/MeshInstance3D")
+
+[node name="Capsule" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, -8)
+mesh = SubResource("CapsuleMesh_x3yc4")
